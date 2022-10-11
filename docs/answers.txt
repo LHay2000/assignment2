@@ -1,0 +1,64 @@
+
+Git Lab Tutorial Date: 10/11/2022
+
+Date Git Account was created: 09/30/2022
+
+
+1. Luke@DESKTOP-81IB9JO MINGW64 ~/documents/GitHub/assignment2/docs (master)
+$ git commit; git push
+[master d24546a] Directory 'docs' and 'status.txt' created
+ 1 file changed, 8 insertions(+)
+ create mode 100644 docs/status.txt
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 595 bytes | 595.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/LHay2000/assignment2.git
+   1de9e3e..d24546a  master -> master
+
+2. Luke@DESKTOP-81IB9JO MINGW64 ~/documents/GitHub/assignment2/docs (master)
+$ git rev-list --all --count
+9
+I also used $ git shortlog for a break down of commits.
+There are 9 commits. 6 by Estaban and 3 by myself.
+
+3. Luke@DESKTOP-81IB9JO MINGW64 ~/documents/GitHub/assignment2/docs (master)
+$ git log ~/documents/GitHub/assignment2/README.md
+commit 1de9e3e146da1357e20de046ab27a21092a0d226
+Author: LukeH <luckyluke2356@gmail.com>
+Date:   Tue Oct 11 15:53:01 2022 -0500
+
+4. Branches are used in Git repositories to ease the addition and removal of
+code. If branches weren't used and code needed to be removed, but new code 
+relied on the removed code, it would cause problems. The ability to merge branched
+code is also important because accepted code can be implemented in its desired 
+location.
+
+5. Git status focuses on the current working directory, while git log looks
+at the history of commits in a project.
+
+6. $ git log --all ~/documents/GitHub/assignment2/Vehicle.h
+This command shows all commits for Vehicle.h, which there are 3.
+
+7. $ git log --grep=file
+This command returns all commit messages containing 'file,' there were also 3 here.
+
+8. Inheritance allows a class to derived from another class. The derived class shares 
+attributes and methods from the parent. Polymorphism relates to the inheritance through
+the form the data takes. Polymorphism makes sure the objects execute the correct methods.
+Encapsulation is often seen in classes where data and methods that are used on the data
+are held.
+
+9. The main difference between the "Dictator and Lieutenants" workflow and "Integration" 
+workflow is the number of phases where merging occurs. In the "Dictator and Lieutenants"
+workflow the number of repositories are cut in half until the dictator makes the final 
+push. The "Integration" workflow has the same people working on changes until the 
+manager makes the push.
+
+10. Changes to the shared repository in the Centralized workflow could make another 
+developer's changes obselete. The "Dictator and Lieutenants" workflow allows changes
+to be made, but they have to be merged and approved first by people that are higher up. 
+
